@@ -1,0 +1,36 @@
+{
+"links": [
+{"source":"Afternoon","target":"AllON","value":"2", "fillColor": "green"},
+{"source":"Afternoon","target":"AllON","value":"3", "fillColor": "blue"},
+{"source":"Afternoon","target":"BlindsON","value":"4", "fillColor": "blue"},
+{"source":"Afternoon","target":"BlindsON","value":"1", "fillColor": "green"},
+
+
+{"source":"AllON","target":"AllON2","value":"3", "fillColor": "blue"},
+{"source":"AllON","target":"BlindsON2","value":"2", "fillColor": "green"},
+{"source":"BlindsON","target":"BlindsON2","value":"4", "fillColor": "blue"},
+{"source":"BlindsON","target":"LightsON2","value":"1", "fillColor": "green"},
+
+
+{"source":"AllON2","target":"False","value":"3", "fillColor": "blue"},
+{"source":"BlindsON2","target":"False","value":"4", "fillColor": "blue"},
+{"source":"BlindsON2","target":"True","value":"2", "fillColor": "green"},
+{"source":"LightsON2","target":"True","value":"1", "fillColor": "green"},
+
+
+{"source":"True","target":"Decrease","value":"3", "fillColor": "green"},
+{"source":"False","target":"Neutral","value":"7", "fillColor": "blue"}
+] ,
+"nodes": [
+{"name":"Afternoon"},
+{"name":"AllON"},
+{"name":"BlindsON"},
+{"name":"AllON2"},
+{"name":"BlindsON2"},
+{"name":"LightsON2"},
+{"name":"True"},
+{"name":"False"},
+{"name":"Neutral"},
+{"name":"Decrease"}
+
+] }

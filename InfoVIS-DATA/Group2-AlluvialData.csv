@@ -1,0 +1,21 @@
+#participant ,time,ENV0,ENV2,change ,consumption
+2001,Morning,BlindsON,BlindsON,FALSE,Neutral
+2003,Morning,All Dark,All Dark,FALSE,Neutral
+2004,Morning,AllON,LightsON,TRUE,Decrease
+2006,Morning,AllON,LightsON,TRUE,Decrease
+2008,Morning,BlindsON,LightsON,TRUE,Decrease
+2011,Morning,BlindsON,LightsON,TRUE,Decrease
+2013,Morning,AllON,LightsON,TRUE,Decrease
+2014,Morning,BlindsON,BlindsON,FALSE,Neutral
+2016,Morning,BlindsON,AllON,TRUE,Increase
+2027,Morning,All Dark,AllON,TRUE,Increase
+2001,Afternoon,BlindsON,AllON,TRUE,increase
+2003,Afternoon,All Dark,BlindsON,TRUE,Increase
+2004,Afternoon,BlindsON,BlindsON,FALSE,Neutral
+2006,Afternoon,AllON,BlindsON,TRUE,decrease
+2008,Afternoon,BlindsON,BlindsON,FALSE,Neutral
+2011,Afternoon,BlindsON,BlindsON,FALSE,Neutral
+2013,Afternoon,LightsON,LightsON,FALSE,Neutral
+2014,Afternoon,BlindsON,BlindsON,FALSE,Neutral
+2016,Afternoon,AllON,AllON,FALSE,Neutral
+2027,Afternoon,AllON,All Dark,TRUE,decrease

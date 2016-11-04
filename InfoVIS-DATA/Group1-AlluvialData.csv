@@ -1,0 +1,21 @@
+Participant#,Time,ENV0,ENV1,Change?,Energy Consumption Reduction?,Freq
+2002,Morning,LightsON/BindsON,LightsON/BindsON,FALSE,Neutral,1
+2005,Morning,LightsOFF/BindsON,LightsOFF/BindsON,FALSE,Neutral,1
+2007,Morning,LightsOFF/BindsON,LightsON/BindsOFF,TRUE,Decrease,1
+2009,Morning,LightsOFF/BindsON,LightsON/BindsON,TRUE,Increase,1
+2010,Morning,LightsON/BindsON,LightsON/BindsON,FALSE,Neutral,1
+2012,Morning,LightsON/BindsON,LightsON/BindsON,FALSE,Neutral,1
+2015,Morning,LightsOFF/BindsON,LightsOFF/BindsON,FALSE,Neutral,1
+2017,Morning,LightsOFF/BindsON,LightsOFF/BindsON,FALSE,Neutral,1
+2025,Morning,LightsOFF/BindsON,LightsON/BindsON,TRUE,Increase,1
+2028,Morning,LightsOFF/BindsON,LightsOFF/BindsON,FALSE,Neutral,1
+2002,Afternoon,LightsON/BindsON,LightsOFF/BindsON,TRUE,Decrease,1
+2005,Afternoon,LightsOFF/BindsON,LightsON/BindsOFF,TRUE,Decrease,1
+2007,Afternoon,LightsOFF/BindsON,LightsOFF/BindsON,FALSE,Neutral,1
+2009,Afternoon,LightsON/BindsON,LightsOFF/BindsON,TRUE,Decrease,1
+2010,Afternoon,LightsON/BindsON,LightsON/BindsON,FALSE,Neutral,1
+2012,Afternoon,LightsON/BindsON,LightsON/BindsON,FALSE,Neutral,1
+2015,Afternoon,LightsOFF/BindsON,LightsOFF/BindsON,FALSE,Neutral,1
+2017,Afternoon,LightsOFF/BindsON,LightsOFF/BindsON,FALSE,Neutral,1
+2025,Afternoon,LightsON/BindsON,LightsON/BindsON,FALSE,Neutral,1
+2028,Afternoon,LightsOFF/BindsON,LightsOFF/BindsON,FALSE,Neutral,1

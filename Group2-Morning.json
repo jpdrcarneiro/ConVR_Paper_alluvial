@@ -1,0 +1,45 @@
+{
+"links": [
+{"source":"Morning","target":"AllON","value":"3", "fillColor": "green"},
+{"source":"Morning","target":"BlindsON","value":"2", "fillColor": "blue"},
+{"source":"Morning","target":"BlindsON","value":"2", "fillColor": "green"},
+{"source":"Morning","target":"BlindsON","value":"1", "fillColor": "red"},
+{"source":"Morning","target":"AllOFF","value":"1", "fillColor": "blue"},
+{"source":"Morning","target":"AllOFF","value":"1", "fillColor": "red"},
+
+
+{"source":"AllON","target":"LightsON2","value":"3", "fillColor": "green"},
+{"source":"BlindsON","target":"AllON2","value":"1", "fillColor": "red"},
+{"source":"BlindsON","target":"BlindsON2","value":"2", "fillColor": "blue"},
+{"source":"BlindsON","target":"LightsON2","value":"2", "fillColor": "green"},
+{"source":"AllOFF","target":"AllOFF2","value":"1", "fillColor": "blue"},
+{"source":"AllOFF","target":"AllON2","value":"1", "fillColor": "red"},
+
+
+{"source":"AllON2","target":"True","value":"2", "fillColor": "red"},
+{"source":"BlindsON2","target":"False","value":"2", "fillColor": "blue"},
+{"source":"LightsON2","target":"True","value":"5", "fillColor": "green"},
+{"source":"AllOFF2","target":"False","value":"1", "fillColor": "blue"},
+
+
+{"source":"True","target":"Decrease","value":"5", "fillColor": "green"},
+{"source":"False","target":"Neutral","value":"3", "fillColor": "blue"},
+{"source":"True","target":"Increase","value":"2", "fillColor": "red"}
+] ,
+"nodes": [
+{"name":"Morning"},
+{"name":"AllON"},
+{"name":"BlindsON"},
+{"name":"LightsON"},
+{"name":"AllOFF"},
+{"name":"AllON2"},
+{"name":"BlindsON2"},
+{"name":"LightsON2"},
+{"name":"AllOFF2"},
+{"name":"True"},
+{"name":"False"},
+{"name":"Neutral"},
+{"name":"Decrease"},
+{"name":"Increase"}
+
+] }
