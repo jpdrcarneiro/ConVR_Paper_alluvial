@@ -1,38 +1,24 @@
 {
 "links": [
-{"source":"Morning","target":"AllON","value":"3", "fillColor": "blue"},
-{"source":"Morning","target":"BlindsON","value":"4", "fillColor": "blue"},
-{"source":"Morning","target":"BlindsON","value":"2", "fillColor": "red"},
-{"source":"Morning","target":"BlindsON","value":"1", "fillColor": "green"},
+{"source":"All","target":"All*","value":"3", "fillColor": "blue"},
+{"source":"Blinds","target":"All*","value":"2", "fillColor": "red"},
+{"source":"Blinds","target":"Blinds*","value":"4", "fillColor": "blue"},
+{"source":"Blinds","target":"Lights*","value":"1", "fillColor": "green"},
 
 
-{"source":"AllON","target":"AllON2","value":"3", "fillColor": "blue"},
-{"source":"BlindsON","target":"AllON2","value":"2", "fillColor": "red"},
-{"source":"BlindsON","target":"BlindsON2","value":"4", "fillColor": "blue"},
-{"source":"BlindsON","target":"LightsON2","value":"1", "fillColor": "green"},
-
-
-{"source":"AllON2","target":"True","value":"2", "fillColor": "red"},
-{"source":"AllON2","target":"False","value":"3", "fillColor": "blue"},
-{"source":"BlindsON2","target":"False","value":"4", "fillColor": "blue"},
-{"source":"LightsON2","target":"True","value":"1", "fillColor": "green"},
-
-
-{"source":"True","target":"Decrease","value":"1", "fillColor": "green"},
-{"source":"False","target":"Neutral","value":"7", "fillColor": "blue"},
-{"source":"True","target":"Increase","value":"2", "fillColor": "red"}
+{"source":"All*","target":"True","value":"2", "fillColor": "red"},
+{"source":"All*","target":"False","value":"3", "fillColor": "blue"},
+{"source":"Blinds*","target":"False","value":"4", "fillColor": "blue"},
+{"source":"Lights*","target":"True","value":"1", "fillColor": "green"}
 ] ,
+
 "nodes": [
-{"name":"Morning"},
-{"name":"AllON"},
-{"name":"BlindsON"},
-{"name":"AllON2"},
-{"name":"BlindsON2"},
-{"name":"LightsON2"},
-{"name":"True"},
-{"name":"False"},
-{"name":"Neutral"},
-{"name":"Decrease"},
-{"name":"Increase"}
+{"name":"All", "nodeColor": "black"},
+{"name":"Blinds" , "nodeColor": "yellow"},
+{"name":"All*" , "nodeColor": "blue"},
+{"name":"Blinds*", "nodeColor": "white"},
+{"name":"Lights*", "nodeColor": "black"},
+{"name":"True", "nodeColor": "black"},
+{"name":"False", "nodeColor": "black"}
 
 ] }

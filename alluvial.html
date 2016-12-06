@@ -1,20 +1,79 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alluvial Diagram</title>
 <body>
  
 <p id="chart">
- 
-<script src="http://d3js.org/d3.v3.js"></script>
-<script src="sankey.js"></script>
 
-<iframe src="Group1-Morning.html" width="530" height="330" frameborder="0" ></iframe>
-<iframe src="Group1-Afternoon.html" width="530" height="330" frameborder="0"></iframe>
-<iframe src="Group2-Morning.html" width="530" height="330" frameborder="0" ></iframe>
-<iframe src="Group2-Afternoon.html" width="530" height="330" frameborder="0"></iframe>
-<iframe src="Group3-Morning.html" width="530" height="330" frameborder="0" ></iframe>
-<iframe src="Group3-Afternoon.html" width="530" height="330" frameborder="0"></iframe>
+    <style>
 
+        .node rect {
+            cursor: move;
+            fill-opacity: .9;
+            shape-rendering: crispEdges;
+        }
+
+        .node text {
+            pointer-events: none;
+            text-shadow: 0 1px 0 #fff;
+        }
+
+        .link {
+            fill: none;
+            stroke: #000;
+            stroke-opacity: .3;
+        }
+
+        .link:hover {
+            stroke-opacity: .5;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="sankey.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="SankeyFunction.js"></script>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-4" id="group1-morning">
+            <h3 align="center">Group 1 Morning</h3>
+        </div>
+        <div class="col-xs-4" id="group2-morning">
+            <h3 align="center">Group 2 Morning</h3>
+        </div>
+        <div class="col-xs-4" id="group3-morning">
+            <h3 align="center">Group 3 Morning</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4" id="group1-afternoon">
+            <h3 align="center">Group 1 Afternoon</h3>
+        </div>
+        <div class="col-xs-4" id="group2-afternoon">
+            <h3 align="center">Group 2 Afternoon</h3>
+        </div>
+        <div class="col-xs-4" id="group3-afternoon">
+            <h3 align="center">Group 3 Afternoon</h3>
+        </div>
+
+    </div>
+    <div class="container-fluid" id="legend"></div>
+
+</div>
+
+<script type="text/javascript">
+    generateSankey("Group1-Afternoon.json", "group1-afternoon");
+    generateSankey("Group2-Afternoon.json", "group2-afternoon");
+    generateSankey("Group3-Afternoon.json", "group3-afternoon");
+    generateSankey("Group1-Morning.json", "group1-morning");
+    generateSankey("Group2-Morning.json", "group2-morning");
+    generateSankey("Group3-Morning.json", "group3-morning");
+    </script>
  
 </body>
 </html>

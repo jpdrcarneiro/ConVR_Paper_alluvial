@@ -1,0 +1,21 @@
+#participant ,time,ENV0,ENV2,change ,consumption
+2018,Morning,BlindsON,AllON,TRUE,Increase
+2019,Morning,BlindsON,BlindsON,FALSE,Neutral
+2020,Morning,BlindsON,LightsON,TRUE,Increase
+2021,Morning,AllDark,BlindsON,TRUE,Increase
+2022,Morning,AllDark,LightsON,TRUE,Increase
+2023,Morning,LightsON,LightsON,FALSE,Neutral
+2024,Morning,BlindsON,AllON,TRUE,Increase
+2026,Morning,AllON,BlindsON,TRUE,Decrease
+2029,Morning,AllON,BlindsON,TRUE,Decrease
+2030,Morning,BlindsON,LightsON,TRUE,Decrease
+2018,Afternoon,BlindsON,BlindsON,FALSE,Neutral
+2019,Afternoon,BlindsON,LightsON,TRUE,Decrease
+2020,Afternoon,AllON,LightsON,TRUE,Decrease
+2021,Afternoon,BlindsON,BlindsON,FALSE,Neutral
+2022,Afternoon,AllDark,BlindsON,TRUE,Increase
+2023,Afternoon,LightsON,BlindsON,TRUE,Increase
+2024,Afternoon,AllON,BlindsON,TRUE,Decrease
+2026,Afternoon,AllON,BlindsON,TRUE,Decrease
+2029,Afternoon,BlindsON,AllOFF,TRUE,Decrease
+2030,Afternoon,AllON,AllON,FALSE,Neutral
