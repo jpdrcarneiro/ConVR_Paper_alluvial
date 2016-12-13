@@ -1,10 +1,11 @@
 /**
  * Created by MariaPC on 12/6/2016.
  */
-function generateSankey (filePath, divName){
+function generateSankey (filePath, divName, envNum){
     //set width and height
 
-    divName = "#" + divName
+    var svgId = "svg" +divName;
+    divName = "#" + divName;
     var units = "Widgets";
 
     var CalcHeight = ($(window).height()/2)*0.70;
@@ -24,6 +25,7 @@ function generateSankey (filePath, divName){
     var svg = d3.select(divName).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
+        .attr("id", svgId)
         .append("g")
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
@@ -82,7 +84,7 @@ function generateSankey (filePath, divName){
             .enter().append("g")
             .attr("class", "node")
             .attr("fill", function(d){
-                console.log(d.nodeColor);
+                // console.log(d.nodeColor);
                 return d.nodeColor;
             })
             .attr("transform", function(d) {
@@ -118,7 +120,8 @@ function generateSankey (filePath, divName){
             .attr("x", 6 + sankey.nodeWidth())
             .attr("text-anchor", "start");
 
-// the function for moving the nodes
+
+        // the function for moving the nodes
         function dragmove(d) {
             d3.select(this).attr("transform",
                 "translate(" + (
@@ -128,6 +131,46 @@ function generateSankey (filePath, divName){
                 ) + ")");
             sankey.relayout();
             link.attr("d", path);
+
         }
+
+
     });
+
+//adding names to columns
+    var colLabels = ["Env 0", envNum, "Change"];
+    svgId = "#" + svgId;
+    var svgAlt = svgId + "2";
+
+    // console.log($(svgId).height());
+
+    var svg2 = d3.select(divName)
+        .append("svg")
+        .attr("width", $(svgId).width())
+        .attr("height", 20)
+        .attr("id", svgAlt);
+
+    svg2.selectAll("text")
+        .data(colLabels).enter()
+        .append("text")
+        .text(function(d){
+            // console.log(d);
+            return d;
+        })
+        .attr("x", function (d,i){
+            console.log($(svgId).width());
+            if (i==0){
+                return (($(svgId).width()))*(i/2);
+            } else if (i == 1) {
+                return (($(svgId).width()))*(i/2)-(40.91/2);
+            } else {
+               return (($(svgId).width()))*(i/2) - 56;
+            }
+
+        })
+        .attr("y", 13)
+        .attr("font-size", "16px")
+        // .attr("font-family", "sens-serif")
+        .attr("text-anchor", "center");
+
 }

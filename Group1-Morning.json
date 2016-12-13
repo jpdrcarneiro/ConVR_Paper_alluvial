@@ -13,12 +13,12 @@
 ] ,
 
 "nodes": [
-{"name":"All", "nodeColor": "black"},
-{"name":"Blinds" , "nodeColor": "yellow"},
-{"name":"All*" , "nodeColor": "blue"},
+{"name":"All", "nodeColor": "white"},
+{"name":"Blinds" , "nodeColor": "white"},
+{"name":"All*" , "nodeColor": "white"},
 {"name":"Blinds*", "nodeColor": "white"},
-{"name":"Lights*", "nodeColor": "black"},
-{"name":"True", "nodeColor": "black"},
-{"name":"False", "nodeColor": "black"}
+{"name":"Lights*", "nodeColor": "white"},
+{"name":"True", "nodeColor": "white"},
+{"name":"False", "nodeColor": "white"}
 
 ] }

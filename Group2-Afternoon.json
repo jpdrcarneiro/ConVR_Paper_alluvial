@@ -1,48 +1,36 @@
 {
 "links": [
-{"source":"Afternoon","target":"AllON","value":"2", "fillColor": "green"},
-{"source":"Afternoon","target":"AllON","value":"1", "fillColor": "blue"},
-{"source":"Afternoon","target":"BlindsON","value":"4", "fillColor": "blue"},
-{"source":"Afternoon","target":"BlindsON","value":"1", "fillColor": "red"},
-{"source":"Afternoon","target":"LightsON","value":"1", "fillColor": "blue"},
-{"source":"Afternoon","target":"AllOFF","value":"1", "fillColor": "red"},
 
-{"source":"AllON","target":"AllON2","value":"1", "fillColor": "blue"},
-{"source":"AllON","target":"BlindsON2","value":"1", "fillColor": "green"},
-{"source":"AllON","target":"AllOFF2","value":"1", "fillColor": "green"},
-{"source":"BlindsON","target":"BlindsON2","value":"4", "fillColor": "blue"},
-{"source":"BlindsON","target":"AllON2","value":"1", "fillColor": "red"},
-{"source":"LightsON","target":"LightsON2","value":"1", "fillColor": "blue"},
-{"source":"AllOFF","target":"BlindsON2","value":"1", "fillColor": "red"},
+{"source":"All","target":"All*","value":"1", "fillColor": "blue"},
+{"source":"All","target":"Blinds*","value":"1", "fillColor": "green"},
+{"source":"All","target":"NoLights*","value":"1", "fillColor": "green"},
+{"source":"Blinds","target":"Blinds*","value":"4", "fillColor": "blue"},
+{"source":"Blinds","target":"All*","value":"1", "fillColor": "red"},
+{"source":"Lights","target":"Lights*","value":"1", "fillColor": "blue"},
+{"source":"NoLights","target":"Blinds*","value":"1", "fillColor": "red"},
 
 
-{"source":"AllON2","target":"False","value":"1", "fillColor": "blue"},
-{"source":"AllON2","target":"True","value":"1", "fillColor": "red"},
-{"source":"BlindsON2","target":"False","value":"4", "fillColor": "blue"},
-{"source":"BlindsON2","target":"True","value":"1", "fillColor": "green"},
-{"source":"BlindsON2","target":"True","value":"1", "fillColor": "red"},
-{"source":"LightsON2","target":"False","value":"1", "fillColor": "blue"},
-{"source":"AllOFF2","target":"True","value":"1", "fillColor": "green"},
+{"source":"All*","target":"False","value":"1", "fillColor": "blue"},
+{"source":"All*","target":"True","value":"1", "fillColor": "red"},
+{"source":"Blinds*","target":"False","value":"4", "fillColor": "blue"},
+{"source":"Blinds*","target":"True","value":"1", "fillColor": "green"},
+{"source":"Blinds*","target":"True","value":"1", "fillColor": "red"},
+{"source":"Lights*","target":"False","value":"1", "fillColor": "blue"},
+{"source":"NoLights*","target":"True","value":"1", "fillColor": "green"}
 
 
-{"source":"True","target":"Decrease","value":"2", "fillColor": "green"},
-{"source":"True","target":"Increase","value":"2", "fillColor": "red"},
-{"source":"False","target":"Neutral","value":"6", "fillColor": "blue"}
 ] ,
 "nodes": [
-{"name":"Afternoon"},
-{"name":"AllON"},
-{"name":"AllOFF"},
-{"name":"BlindsON"},
-{"name":"LightsON"},
-{"name":"AllON2"},
-{"name":"AllOFF2"},
-{"name":"BlindsON2"},
-{"name":"LightsON2"},
-{"name":"True"},
-{"name":"False"},
-{"name":"Neutral"},
-{"name":"Increase"},
-{"name":"Decrease"}
+
+{"name":"All", "nodeColor":"white"},
+{"name":"NoLights", "nodeColor":"white"},
+{"name":"Blinds", "nodeColor":"white"},
+{"name":"Lights", "nodeColor":"white"},
+{"name":"All*", "nodeColor":"white"},
+{"name":"NoLights*", "nodeColor":"white"},
+{"name":"Blinds*", "nodeColor":"white"},
+{"name":"Lights*", "nodeColor":"white"},
+{"name":"True", "nodeColor":"white"},
+{"name":"False", "nodeColor":"white"}
 
 ] }
