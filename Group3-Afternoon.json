@@ -1,9 +1,9 @@
 {
 "links": [
 
-{"source":"All","target":"All*","value":"1", "fillColor": "blue"},
-{"source":"All","target":"Blinds*","value":"2", "fillColor": "green"},
-{"source":"All","target":"Lights*","value":"1", "fillColor": "green"},
+{"source":"Both","target":"Both*","value":"1", "fillColor": "blue"},
+{"source":"Both","target":"Blinds*","value":"2", "fillColor": "green"},
+{"source":"Both","target":"Lights*","value":"1", "fillColor": "green"},
 {"source":"Blinds","target":"Blinds*","value":"2", "fillColor": "blue"},
 {"source":"Blinds","target":"Lights*","value":"1", "fillColor": "green"},
 {"source":"Blinds","target":"NoLights*","value":"1", "fillColor": "green"},
@@ -11,7 +11,7 @@
 {"source":"NoLights","target":"Blinds*","value":"1", "fillColor": "red"},
 
 
-{"source":"All*","target":"False","value":"1", "fillColor": "blue"},
+{"source":"Both*","target":"False","value":"1", "fillColor": "blue"},
 {"source":"Blinds*","target":"False","value":"2", "fillColor": "blue"},
 {"source":"Blinds*","target":"True","value":"2", "fillColor": "green"},
 {"source":"Blinds*","target":"True","value":"2", "fillColor": "red"},
@@ -21,11 +21,11 @@
 
 ] ,
 "nodes": [
-{"name":"All", "nodeColor":"white"},
+{"name":"Both", "nodeColor":"white"},
 {"name":"Blinds", "nodeColor":"white"},
 {"name":"Lights", "nodeColor":"white"},
 {"name":"NoLights", "nodeColor":"white"},
-{"name":"All*", "nodeColor":"white"},
+{"name":"Both*", "nodeColor":"white"},
 {"name":"Blinds*", "nodeColor":"white"},
 {"name":"Lights*", "nodeColor":"white"},
 {"name":"NoLights*", "nodeColor":"white"},

@@ -1,17 +1,17 @@
 {
 "links": [
 
-{"source":"All","target":"All*","value":"1", "fillColor": "blue"},
-{"source":"All","target":"Blinds*","value":"1", "fillColor": "green"},
-{"source":"All","target":"NoLights*","value":"1", "fillColor": "green"},
+{"source":"Both","target":"Both*","value":"1", "fillColor": "blue"},
+{"source":"Both","target":"Blinds*","value":"1", "fillColor": "green"},
+{"source":"Both","target":"NoLights*","value":"1", "fillColor": "green"},
 {"source":"Blinds","target":"Blinds*","value":"4", "fillColor": "blue"},
-{"source":"Blinds","target":"All*","value":"1", "fillColor": "red"},
+{"source":"Blinds","target":"Both*","value":"1", "fillColor": "red"},
 {"source":"Lights","target":"Lights*","value":"1", "fillColor": "blue"},
 {"source":"NoLights","target":"Blinds*","value":"1", "fillColor": "red"},
 
 
-{"source":"All*","target":"False","value":"1", "fillColor": "blue"},
-{"source":"All*","target":"True","value":"1", "fillColor": "red"},
+{"source":"Both*","target":"False","value":"1", "fillColor": "blue"},
+{"source":"Both*","target":"True","value":"1", "fillColor": "red"},
 {"source":"Blinds*","target":"False","value":"4", "fillColor": "blue"},
 {"source":"Blinds*","target":"True","value":"1", "fillColor": "green"},
 {"source":"Blinds*","target":"True","value":"1", "fillColor": "red"},
@@ -22,11 +22,11 @@
 ] ,
 "nodes": [
 
-{"name":"All", "nodeColor":"white"},
+{"name":"Both", "nodeColor":"white"},
 {"name":"NoLights", "nodeColor":"white"},
 {"name":"Blinds", "nodeColor":"white"},
 {"name":"Lights", "nodeColor":"white"},
-{"name":"All*", "nodeColor":"white"},
+{"name":"Both*", "nodeColor":"white"},
 {"name":"NoLights*", "nodeColor":"white"},
 {"name":"Blinds*", "nodeColor":"white"},
 {"name":"Lights*", "nodeColor":"white"},

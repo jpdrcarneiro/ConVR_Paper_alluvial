@@ -1,21 +1,21 @@
 {
 "links": [
-{"source":"All","target":"All*","value":"3", "fillColor": "blue"},
-{"source":"Blinds","target":"All*","value":"2", "fillColor": "red"},
+{"source":"Both","target":"Both*","value":"3", "fillColor": "blue"},
+{"source":"Blinds","target":"Both*","value":"2", "fillColor": "red"},
 {"source":"Blinds","target":"Blinds*","value":"4", "fillColor": "blue"},
 {"source":"Blinds","target":"Lights*","value":"1", "fillColor": "green"},
 
 
-{"source":"All*","target":"True","value":"2", "fillColor": "red"},
-{"source":"All*","target":"False","value":"3", "fillColor": "blue"},
+{"source":"Both*","target":"True","value":"2", "fillColor": "red"},
+{"source":"Both*","target":"False","value":"3", "fillColor": "blue"},
 {"source":"Blinds*","target":"False","value":"4", "fillColor": "blue"},
 {"source":"Lights*","target":"True","value":"1", "fillColor": "green"}
 ] ,
 
 "nodes": [
-{"name":"All", "nodeColor": "white"},
+{"name":"Both", "nodeColor": "white"},
 {"name":"Blinds" , "nodeColor": "white"},
-{"name":"All*" , "nodeColor": "white"},
+{"name":"Both*" , "nodeColor": "white"},
 {"name":"Blinds*", "nodeColor": "white"},
 {"name":"Lights*", "nodeColor": "white"},
 {"name":"True", "nodeColor": "white"},
